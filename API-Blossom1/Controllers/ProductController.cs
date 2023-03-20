@@ -2,13 +2,14 @@
 using Entities.Entities;
 using Entities.SearchFilter;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Http.Cors;
 
 namespace API_Blossom1.Controllers
 
 {
 
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
 
-    [ApiController]
     [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
     {
